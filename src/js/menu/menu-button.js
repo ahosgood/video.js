@@ -89,7 +89,7 @@ class MenuButton extends Component {
 
     if (this.items && this.items.length <= this.hideThreshold_) {
       this.hide();
-     this.menu.contentEl_.removeAttribute('role');
+      this.menu.contentEl_.removeAttribute('role');
       this.menu.contentEl_.setAttribute('hidden', 'hidden');
       this.menu.children().forEach((menuItem) => {
         menuItem.dispose();
